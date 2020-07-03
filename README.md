@@ -1,5 +1,9 @@
 # RoboSpark-Srushti_Dalvi
-This repo contains the tasks submitted by mentees under Srushti Dalvi.
+This repo contains the tasks submitted by :
+
+Sajal Bhattar
+Vedangi Deshpande
+Badrisrivaishnavi Yeluri
 
 Steps to upload the task:
  
