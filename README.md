@@ -1,7 +1,11 @@
 # RoboSpark-Srushti_Dalvi
-This branch contains the tasks submitted by :
+This repo contains the tasks submitted by :
 
 Badrisrivaishnavi Yeluri
+
+Vedangi Deshpande
+
+Sajal Bhattar
 
 Steps to upload the task:
  
