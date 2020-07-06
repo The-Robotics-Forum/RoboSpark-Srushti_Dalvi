@@ -1,17 +1,17 @@
-/*Create a student class. Add the necessary data members and also add a dynamic array to store the marks of 5 subjects (use new keyword). Initialize the data members using constructors. We don't know the cgpa yet so assign it some random value in constructor. Write following functions inside the class -
-Function to return the total marks. Function to calculate and store the cgpa in the variable, Funtion to take input (Dont take cgpa as input) and to display the data.
-Think : Where can you use delete keyword to free the memory allocated to the marks array.
-*/
-​
 #include<iostream>
 #include<cstring>
 using namespace std;
-​
+
 class Student{
     public:
 
     string name;
     int roll;
+
+    Student(){
+        name="";
+        roll=0;
+    }
     int* arr= new int[5];
     int total(int* arr){
         float  sum=0;
@@ -28,7 +28,7 @@ class Student{
         cgpa=per/9.5;
         return cgpa;
         }
-​
+
     Student input(){
         Student S;
         cout<<"Fill student details\n";
@@ -44,18 +44,19 @@ class Student{
         cout<<"\nStudent name: "<<S.name;
         cout<<"\nRoll number: "<<S.roll;
         cout<<"\nThe total score is: "<<total(S.arr);
-        cout<<"\nCGPA: "<<cgpa(total(S.arr));
+        cout<<"\nCGPA: "<<cout<<"\nCGPA: "<<cgpa(total(S.arr));
 
     }
-​
+
 
 };
-​
-​
-​
+
+
+
 int main(){
     Student S;
     S=S.input();
     S.display(S);
-​
+
 }
+

@@ -4,7 +4,6 @@ When the function has only student as an argument, print the student details and
 When the function received one student and one int as arguments, print the student details and the rank.
 Rank is not a data member of Student
 Remember : Avoid copy pasting the code. Define proper functions. (edited) */
-​
 #include<iostream>
 #include<string>
 using namespace std;
@@ -16,21 +15,17 @@ public:
     float cgpa;
     void showRank(Student S){
         cout<<"\tStudent detils\n";
-        cout<<"Name: "<<S.name<<"\nRoll: "<<S.roll<<"\nCGPA: "<<S.cgpa<<"\nRank: No rank";
-​
-​
-    }
+        cout<<"Name: "<<S.name<<"\nRoll: "<<S.roll<<"\nCGPA: "<<S.cgpa<<"\nRank: No rank"<<endl;
+}
     void showRank(Student S, int rank){
         cout<<"\tStudent detils\n";
-        cout<<"Name: "<<S.name<<"\nRoll: "<<S.roll<<"\nCGPA: "<<S.cgpa<<"\nRank: "<<rank;
-    }
+        cout<<"Name: "<<S.name<<"\nRoll: "<<S.roll<<"\nCGPA: "<<S.cgpa<<"\nRank: "<<rank<<endl;
+        }
     void showRank(int rank){
         cout<<"\tStudent Rank: "<<rank;
-    }
-​
-​
+        }
 };
-​
+
 int main()
 {
     Student S;
@@ -41,5 +36,4 @@ int main()
     S.showRank(S);
     S.showRank(S,rank);
     S.showRank(rank);
-​
 }
